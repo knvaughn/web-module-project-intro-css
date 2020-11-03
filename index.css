@@ -32,8 +32,9 @@ body {
 }
 #wrapper {
     padding-top: 44px;
-    margin: 0 4px 10px;
+    margin: 0 auto 10px;
     box-shadow: 0 3px 3px #bbb;
+    max-width: 1440px;
 }
 nav ul {
     list-style-type: none;
@@ -137,4 +138,31 @@ footer {
 }
 footer nav {
     padding: 43px 0 45px;
+}
+@media screen and (max-width: 1024px) {
+    #wrapper {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+    }
+    header, nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+    nav ul li a {
+        width: 100%;
+        border-radius: 0px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    #about {
+        left: 0;
+    }
+    .content p {
+        padding: 0;
+    }
 }
